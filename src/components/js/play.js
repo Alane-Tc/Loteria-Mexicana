@@ -1,6 +1,6 @@
 
-let bajara = [];
-let Tipo_de_bajara = [
+let bajara = []; //Arreglo para guardar las cartas
+let Tipo_de_bajara = [ //Arreglo de las cartas de la loteria 
     'El gallo', 'El diablito', 'La dama', 'El catrín', 'El paraguas', 'La sirena',
     'La escalera', 'La botella', 'El barril', 'El árbol', 'El melón', 'El valiente', 'El gorrito',
     'La muerte',
@@ -46,17 +46,19 @@ let Tipo_de_bajara = [
     'La rana'
 ];
 
+//Funcion para mezclar las cartas aleatoriamente
 const mezclarCartas = () => {
     for (let tipobaraja of Tipo_de_bajara) {
         bajara.push(tipobaraja)
     }
-    bajara = _.shuffle(bajara);
+    bajara = _.shuffle(bajara); //Con esta funcion se mezclan las cartas
     console.log(bajara);
     return bajara;
 }
 
 mezclarCartas()
 
+//Función para pedir una carta aleatoria
 const pedirCarta = () => {
     const carta = bajara.pop();
     (bajara.length === 0) ? console.warn('Se acababo el juego') : console.warn("Juegale")
@@ -65,6 +67,7 @@ const pedirCarta = () => {
     return carta
 }
 
+//Probamos que funcione
 for (let index = 0; index < 54; index++) {
     pedirCarta()
 }
