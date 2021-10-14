@@ -1,0 +1,28 @@
+html, body {
+  background-color: #2F4F30;
+}
+
+#header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.carta {
+  position: relative;
+  width: 240px;
+  left: 280px;
+  margin-left: -239px;
+}
+
+#cartas_loteria {
+  height: 240px;
+}
+
+#contador {
+  color: white;
+}
+
+/*# sourceMappingURL=play.css.map */
