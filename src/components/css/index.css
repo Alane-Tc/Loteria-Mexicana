@@ -16,7 +16,7 @@ body {
   border-radius: 50px;
   border-radius: 50px;
   border-radius: 50px;
-  background: #a9d6e5;
+  /*background: #a9d6e5;*/
 }
 
 button {
@@ -103,7 +103,7 @@ button:focus:not(:focus-visible) {
 
 @media (min-width: 1200px) {
   #sub-caja {
-    padding: 170px;
+    padding: 60px;
   }
 
   #titulo_principal {
