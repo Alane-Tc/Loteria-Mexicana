@@ -101,6 +101,34 @@ button:focus:not(:focus-visible) {
   text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
 }
 
+/*Responsive*/
+@media (max-width: 575.98px) {
+  body {
+    background: red;
+  }
+
+  #sub-caja {
+    margin-top: -50px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background: green;
+  }
+
+  #sub-caja {
+    margin-top: -90px;
+  }
+}
+/* @media (min-width: 768px) and (max-width: 991.98px) { 
+   body{background: yellow;}
+
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    body{background: blue;}
+
+ }*/
 @media (min-width: 1200px) {
   #sub-caja {
     padding: 60px;
