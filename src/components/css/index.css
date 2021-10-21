@@ -103,35 +103,20 @@ button:focus:not(:focus-visible) {
 
 /*Responsive*/
 @media (max-width: 575.98px) {
-  body {
-    background: red;
-  }
-
+  /*body{background: red;}*/
   #sub-caja {
     margin-top: -50px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  body {
-    background: green;
-  }
-
+  /*body{background: green;}*/
   #sub-caja {
     margin-top: -90px;
   }
 }
-/* @media (min-width: 768px) and (max-width: 991.98px) { 
-   body{background: yellow;}
-
- }
-
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    body{background: blue;}
-
- }*/
 @media (min-width: 1200px) {
   #sub-caja {
-    padding: 60px;
+    padding: 40px;
   }
 
   #titulo_principal {
