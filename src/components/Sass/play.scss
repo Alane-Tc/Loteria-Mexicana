@@ -1,3 +1,7 @@
+@mixin textDecorationBlack (){
+    text-shadow: 3px 3px 0 #212529, 3px -3px 0 #212529, -3px 3px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
+}
+
 html,body{
     background-color: #2F4F30;
 }
@@ -10,17 +14,48 @@ html,body{
     font-size: 25px;
 }
 
-.carta{
-    position: relative;
-    width: 240px;
-    left: 280px;
-    margin-left: -239px;
-}
-
 #cartas_loteria{
-    height: 240px;
+    margin-top: 3em;
+    height:  auto;
+
+    #contador{
+        color: white;
+        @include textDecorationBlack()
+    }
+
+    .carta{
+        position: relative;
+        width: 240px;
+        left: 125px;
+        margin-left: -239px;
+        margin-top: 1em;
+    }
+    
 }
 
-#contador{
-    color: white;
+#div_botones{
+    margin-top: 1em;
 }
+
+/*Responsive*/
+@media (max-width: 575.98px) {  
+    #header{
+       h1{
+           font-size: 20px;
+       }
+    }
+
+    #cartas_loteria{
+        margin-top: 1em;
+
+        #contador{
+            font-size: 28px;
+        }
+
+        .carta{
+            width: 239px;
+            left: 120px;
+        }
+    }
+
+ }
