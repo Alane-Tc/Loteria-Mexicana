@@ -52,6 +52,7 @@ const play = (() => {
     let btnPedir = document.querySelector('#btnPedir')
     let divCarta = document.querySelector('#cartas_loteria')
     let small = document.querySelector('small');
+    let btnNuevo = document.querySelector('#btnNuevo')
 
     //Funcion para mezclar las cartas aleatoriamente
     const mezclarCartas = () => {
@@ -84,5 +85,7 @@ const play = (() => {
         contadorCartas++
         small.innerText = contadorCartas;
     })
+
+    btnNuevo.addEventListener('click', () => { window.location.assign('../../../src/play.html') })
 
 })
