@@ -5,7 +5,7 @@
 
 ------------
 ## 📝Descripción
-LTexto Random  [Click Aqui](https://correysevacorriendo.netlify.app "Click Aqui")
+Aplicación web para el juego de mesa de loteria mexicana, consta con pedir una carta y automaticamente se mezcla el deck para mostrarte la siguiente carta [Click Aqui](https://correysevacorriendo.netlify.app "Click Aqui")
 
 ------------
 
